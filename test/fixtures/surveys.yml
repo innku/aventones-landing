@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  would_charge: MyString
+  would_pay: MyString
+
+two:
+  email: MyString
+  would_charge: MyString
+  would_pay: MyString
