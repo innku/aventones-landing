@@ -1,0 +1,12 @@
+<h1>Listing Surveys</h1>
+
+<% for survey in @surveys: %>
+  <div class="item" data-id="<%= survey.id %>">
+    <a data-type="show"><%= survey.email %></a>
+    
+    <a data-type="edit">Edit</a> 
+    <a data-type="destroy">Destroy</a>
+  </div>
+<% end %>
+
+<p><a data-type="new">New Survey</a></p>

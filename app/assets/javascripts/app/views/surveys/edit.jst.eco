@@ -1,0 +1,36 @@
+<h1>Edit Survey</h1>
+
+<a data-type="back">Back</a>
+
+<form>
+  
+  <label>
+    <span>Email</span>
+    <input 
+      type="text" name="email" 
+      value="<%= @email %>" required
+ autofocus>
+    <br />
+  </label>
+  
+  <label>
+    <span>Would Charge</span>
+    <input 
+      type="text" name="would_charge" 
+      value="<%= @would_charge %>" required
+>
+    <br />
+  </label>
+  
+  <label>
+    <span>Would Pay</span>
+    <input 
+      type="text" name="would_pay" 
+      value="<%= @would_pay %>" required
+>
+    <br />
+  </label>
+  
+  <button>Edit</button>
+
+</form>

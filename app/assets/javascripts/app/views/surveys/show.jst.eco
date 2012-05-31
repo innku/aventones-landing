@@ -1,0 +1,7 @@
+<h1>Show Survey</h1>
+
+<a data-type="edit">Edit</a> <a data-type="back">Back</a>
+
+<p>Email: <%= @email %></p>
+<p>Would Charge: <%= @would_charge %></p>
+<p>Would Pay: <%= @would_pay %></p>
