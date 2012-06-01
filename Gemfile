@@ -12,6 +12,7 @@ end
 gem 'jquery-rails'
 gem 'eco'
 gem 'spine-rails'
+gem 'zurb-foundation'
 
 
 group :development, :test do

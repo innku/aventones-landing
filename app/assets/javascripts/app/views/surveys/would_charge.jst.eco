@@ -4,8 +4,8 @@
 validemos algunos datos como que tengas licencia o seguro?</p>
 
 <p class="buttons">
-  <a class="yes-button" data-type="yes">Si me gustaría</a>
-  <a class="no-button"  data-type="no">No me gustaría</a>
+  <a class="yes-button nice radius large button green" data-type="yes">Si me gustaría</a>
+  <a class="no-button nice radius large button red"  data-type="no">No me gustaría</a>
 </p>
 
 </section>

@@ -2,9 +2,9 @@
 
   <h3>¿Quieres participar?</h3>
 
-  <form>
-    <input type="text" name="email" value="déjanos tu email" required autofocus>
-    <button>Le entro</button>
+  <form class="nice">
+    <input class="input-text" type="text" name="email" value="" placeholder="déjanos tu email" required autofocus>
+    <button class="nice radius large button green">Le entro</button>
   </form>
 
 </section>
