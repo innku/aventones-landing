@@ -1,0 +1,9 @@
+<section id="thankyou">
+  <h3>GRACIAS por tu apoyo</h3>
+
+  <p>Ahora pása la voz para que seamos más</p>
+  <p class="social">
+    <a>Tweet</a>
+    <a>Facebook</a>
+  </p>
+</section>

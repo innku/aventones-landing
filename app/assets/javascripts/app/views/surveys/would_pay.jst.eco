@@ -1,0 +1,23 @@
+<section id="would-pay">
+
+<p>¿Te gustaría en vez de estar pagando taxis, pagarle a algún conocido por
+que te diera un aventón?</p>
+
+<p class="buttons">
+  <a class="yes-button" data-type="yes">
+    Sí<br>
+    si es un amigo si pagaría
+  </a>
+
+  <a class="maybe-button" data-type="maybe">
+    Le pagaría a quien sea<br>
+    siempre y cuando pueda saber quién es
+  </a>
+
+  <a class="no-button"  data-type="no">
+    No<br>
+    no pagaría por un aventón
+  </a>
+</p>
+
+</section>
