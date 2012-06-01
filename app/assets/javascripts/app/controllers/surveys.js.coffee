@@ -21,8 +21,9 @@ class New extends Spine.Controller
       would_pay: null
     }).save()
 
-    #@navigate '/surveys', survey.id, 'would_charge' if survey
-    @navigate '/surveys', survey.id, 'would_pay' if survey
+    scenarios = ['would_charge', 'would_pay']
+    choice = scenarios[Math.floor(Math.random() * scenarios.length)]
+    @navigate '/surveys', survey.id, choice if survey
 
 
 class WouldCharge extends Spine.Controller
