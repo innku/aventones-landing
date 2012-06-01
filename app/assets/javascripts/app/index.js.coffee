@@ -17,6 +17,6 @@ class App extends Spine.Controller
 
     @append(@surveys = new App.Surveys)
 
-    Spine.Route.setup()
+    Spine.Route.setup(shim: true)
 
 window.App = App
