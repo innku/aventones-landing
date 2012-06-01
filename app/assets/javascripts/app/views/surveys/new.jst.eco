@@ -1,36 +1,10 @@
-<h1>New Survey</h1>
+<section id="new-survey">
 
-<a data-type="back">Back</a>
+  <h3>¿Quieres participar?</h3>
 
-<form>
-  
-  <label>
-    <span>Email</span>
-    <input 
-      type="text" name="email" 
-      value="<%= @email %>" required
- autofocus>
-    <br />
-  </label>
-  
-  <label>
-    <span>Would Charge</span>
-    <input 
-      type="text" name="would_charge" 
-      value="<%= @would_charge %>" required
->
-    <br />
-  </label>
-  
-  <label>
-    <span>Would Pay</span>
-    <input 
-      type="text" name="would_pay" 
-      value="<%= @would_pay %>" required
->
-    <br />
-  </label>
-  
-  <button>Create</button>
+  <form>
+    <input type="text" name="email" value="déjanos tu email" required autofocus>
+    <button>Le entro</button>
+  </form>
 
-</form>
+</section>

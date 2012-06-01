@@ -8,7 +8,43 @@
 </head>
 <body>
 
-<%= yield %>
+  <header>
+    <h1>Aventones se abrirá al público</h1>
+    <p><small><a href="#">No sé qué es Aventones</a></small></p>
 
+    <h2>Encuentra con quién compartir el auto y ayúdanos a tener menos
+    tráfico, menos emisiones y mejores ciudades.</h2>
+  </header>
+
+  <div id="app"></div>
+
+  <footer>
+    <p id="corporate">¿Trabajas en responsabilidad social, sustentabilidad o
+    recursos humanos de una empresa?, Aventones Corporativo es un proyecto
+    que quieres tener en tu empresa, te lo aseguramos!!</p>
+
+    <p id="corporate_link">
+    <a href="#">Aventones corporativo</a>
+    </p>
+  </footer>
+
+  <div id="aventones_tooltip" style="display:none;">
+    <p><strong>Aventones</strong> es un portal en Internet que te ayudará a
+    encontrar ya sea amigos o amigos de tus amigos con quién compartir
+    coche.</p>
+
+    <p>En aventones podrás publicar tu ruta de forma muy sencilla, y el
+    sistema buscará entre todas las rutas publicadas para encontrar
+    coincidencias con la tuya, y así mostrarte gente con la cuál podrías
+    compartir el coche.</p>
+
+    <p>Es una solución social y sustentable de movilidad.</p>
+  </div>
+
+  <script type="text/javascript" charset="utf-8">
+    jQuery(function() {
+      new App({ el: $("#app") });
+    });
+  </script>
 </body>
 </html>
