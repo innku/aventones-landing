@@ -1,11 +1,11 @@
 <section id="would-charge">
-
+<div class="divider-hr"></div>
 <p>Te gustaría además ganarte una lana por dar aventones a cambio de que
 validemos algunos datos como que tengas licencia o seguro?</p>
 
-<p class="buttons">
-  <a class="yes-button" data-type="yes">Si me gustaría</a>
-  <a class="no-button"  data-type="no">No me gustaría</a>
+<p class="buttons center">
+  <a class="yes-button" data-type="yes"><span>Si</span> me gustaría</a>
+  <a class="no-button"  data-type="no"><span>No</span> me gustaría</a>
 </p>
 
 </section>

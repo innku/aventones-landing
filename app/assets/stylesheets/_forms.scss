@@ -175,18 +175,7 @@ input[type="checkbox"] {
 }
 
 .btn-inverse {
-	background-color: #ACD889;
-	background-image: -moz-linear-gradient(top, #ACD889, #91BD75);
-	background-image: -ms-linear-gradient(top, #ACD889, #91BD75);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ACD889), to(#91BD75));
-	background-image: -webkit-linear-gradient(top, #ACD889, #91BD75);
-	background-image: -o-linear-gradient(top, #ACD889, #91BD75);
-	background-image: linear-gradient(top, #ACD889, #91BD75);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ACD889', endColorstr='#91BD75', GradientType=0);
-	border-color: #669933 #669933 #91BD75;
-	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-	filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+  @include green-button;
 }
 
 .btn-inverse:hover{

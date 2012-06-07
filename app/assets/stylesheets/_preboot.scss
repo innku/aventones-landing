@@ -8,3 +8,66 @@ $outlineGrey: #e0e4ea;
 $linkGreen:   #6C9D3B;
 $borderGreen: #669933;
 $darkGreen:   #336633;
+$lightRed:    #FF5E81;
+$darkRed:     #FF5563;
+$wineRed:     #830000;
+
+@mixin green-button {
+  background-color: #ACD889;
+	background-image: -moz-linear-gradient(top, #ACD889, #91BD75);
+	background-image: -ms-linear-gradient(top, #ACD889, #91BD75);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ACD889), to(#91BD75));
+	background-image: -webkit-linear-gradient(top, #ACD889, #91BD75);
+	background-image: -o-linear-gradient(top, #ACD889, #91BD75);
+	background-image: linear-gradient(top, #ACD889, #91BD75);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ACD889', endColorstr='#91BD75', GradientType=0);
+	border-color: #669933 #669933 #91BD75;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+}
+
+@mixin green-hover-button {
+  background-color: #B8E889;
+	background-image: -moz-linear-gradient(top, #B8E889, #91BD75);
+	background-image: -ms-linear-gradient(top, #B8E889, #91BD75);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B8E889), to(#91BD75));
+	background-image: -webkit-linear-gradient(top, #B8E889, #91BD75);
+	background-image: -o-linear-gradient(top, #B8E889, #91BD75);
+	background-image: linear-gradient(top, #B8E889, #91BD75);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B8E889', endColorstr='#91BD75', GradientType=0);
+	border-color: #669933 #669933 #91BD75;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+}
+
+@mixin grey-button {
+  background-color: #CCCCCC;
+	background-image: -moz-linear-gradient(top, #CCCCCC, #ABABAB);
+	background-image: -ms-linear-gradient(top, #CCCCCC, #ABABAB);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CCCCCC), to(#ABABAB));
+	background-image: -webkit-linear-gradient(top, #CCCCCC, #ABABAB);
+	background-image: -o-linear-gradient(top, #CCCCCC, #ABABAB);
+	background-image: linear-gradient(top, #CCCCCC, #ABABAB);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#ABABAB', GradientType=0);
+	border-color: #669933 #669933 #ABABAB;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+}
+
+@mixin red-button {
+  background-color: $lightRed;
+	background-image: -moz-linear-gradient(top, $lightRed, $darkRed);
+	background-image: -ms-linear-gradient(top, $lightRed, $darkRed);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($lightRed), to($darkRed));
+	background-image: -webkit-linear-gradient(top, $lightRed, $darkRed);
+	background-image: -o-linear-gradient(top, $lightRed, $darkRed);
+	background-image: linear-gradient(top, $lightRed, $darkRed);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$lightRed', endColorstr='$darkRed', GradientType=0);
+	border-color: #669933 #669933 $darkRed;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+}

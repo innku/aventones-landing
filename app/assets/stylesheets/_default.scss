@@ -45,6 +45,13 @@ body {
   background-color: $white;
 }
 
+hr {
+  border: 0 $lightGrey solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
 // Links
 //----------------------------------------------------------------------------------------------------
 
