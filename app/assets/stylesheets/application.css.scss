@@ -1,0 +1,269 @@
+@import "default";
+@import "compass/css3";
+
+.stack > *:not(.active) {
+  display: none;
+}
+
+.bgstretcher-area { 
+  text-align: left; 
+}
+
+.bgstretcher, 
+.bgstretcher ul, 
+.bgstretcher ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bgstretcher ul, 
+.bgstretcher ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bgstretcher {
+	background: black;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	_position: absolute; /*IE6 doesn't support fixed positioning*/
+	top: 0;
+	left: 0;
+}
+
+.aventones-logo {
+  height: 130px;
+  background: url(bg.png) repeat;
+  @include border-top-left-radius(10px);
+  @include border-top-right-radius(10px);
+  border-bottom: 2px double $borderGreen;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  
+  .logo-bx {
+    border: 2px double $borderGreen;
+    height: 110px;
+    margin: 10px;
+    @include border-top-left-radius(10px);
+    @include border-top-right-radius(10px);
+    
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(201,222,150,0.6) 0%, rgba(138,182,107,0.33) 59%, rgba(102,153,51,0.14) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(201,222,150,0.6)), color-stop(59%,rgba(138,182,107,0.33)), color-stop(100%,rgba(102,153,51,0.14))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(201,222,150,0.6) 0%,rgba(138,182,107,0.33) 59%,rgba(102,153,51,0.14) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(201,222,150,0.6) 0%,rgba(138,182,107,0.33) 59%,rgba(102,153,51,0.14) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(201,222,150,0.6) 0%,rgba(138,182,107,0.33) 59%,rgba(102,153,51,0.14) 100%); /* IE10+ */
+    background: radial-gradient(center, ellipse cover,  rgba(201,222,150,0.6) 0%,rgba(138,182,107,0.33) 59%,rgba(102,153,51,0.14) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c9de96', endColorstr='#24669933',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+              
+  }
+  
+  img {
+    margin-top: 5px;
+  }
+}
+
+.aventones-box {
+  background: rgba(236, 239, 244, 1);
+  margin: 80px 0 0 0;
+  @include border-radius(10px);
+  @include box-shadow(rgba(0, 0, 0, 0.4) 0 0 25px, rgba(0, 0, 0, 0.12)0 0 20px 4px inset);
+  
+  header, #app, footer {
+    padding: 25px 20px 25px;
+  }
+  
+  header {
+    padding: 25px 20px 0;
+    
+    h1 {
+      color: $darkGrey;
+      margin: 20px 22px 0;
+      font-weight: 700;
+      text-align: center;
+      line-height: 40px;
+    }
+    
+    h2 {
+      color: $lightGrey;
+      margin: 0 22px 35px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 30px;
+    }
+    
+  }
+  
+  #app {
+    padding: 0 20px 25px;
+  }
+  
+  footer {
+    padding: 10px 20px 10px;
+    background: url(bg_small.png) repeat;
+    @include border-bottom-left-radius(10px);
+    @include border-bottom-right-radius(10px);
+    
+    p {
+      color: $white;
+      margin: 0;
+    }
+    
+  }
+  
+  h2.divider {
+    background: transparent url(divider.png) repeat-x 0 center;
+    font-size: 22px;
+    text-align: center;
+    
+    span {
+      background: rgba(236, 239, 244, 1);
+      padding: 0 10px 0;
+    }
+    
+  }
+  
+}
+
+.aventones-footer {
+  height: 40px;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  padding: 10px 5px 0 5px;
+//  background: transparent url(box-shadow.png) no-repeat -20px 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+  
+}
+
+.modal-open .dropdown-menu {
+  z-index: 2050;
+}
+
+.modal-open .dropdown.open {
+  *z-index: 2050;
+}
+
+.modal-open .popover {
+  z-index: 2060;
+}
+
+.modal-open .tooltip {
+  z-index: 2070;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3050;
+  width: 560px;
+  margin: -250px 0 0 -280px;
+  overflow: auto;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.modal.fade {
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+      -ms-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal.fade.in {
+  top: 50%;
+}
+
+.modal-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header .close {
+  margin-top: 2px;
+}
+
+.modal-body {
+  max-height: 400px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.modal-form {
+  margin-bottom: 0;
+}
+
+.modal-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: "";
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+

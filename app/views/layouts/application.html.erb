@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AventonesLanding</title>
+  <title>Aventones</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="iconochiquito.png" />
 </head>
 <body>
 
 <div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <header>
-        <h1>Aventones se abrirá al público</h1>
-        <p><a href="#" data-reveal-id="aventones_tooltip">No sé qué es Aventones</a></p>
+  
+  <div class="aventones-box">
+    <div class="aventones-logo"><div class="logo-bx"><%= image_tag("logo-aventones.png") %></div></div>
+    <header>
+      <h1>Aventones se abrirá al público</h1>
+      <h2>Encuentra con quién compartir el auto y ayúdanos a tener menos
+      tráfico, menos emisiones y mejores ciudades. <a href="#aventones_tooltip" data-reveal-id="aventones_tooltip" data-toggle="modal">¿Qué es Aventones?</a></h2>
+    </header>
 
-        <h2>Encuentra con quién compartir el auto y ayúdanos a tener menos
-        tráfico, menos emisiones y mejores ciudades.</h2>
-      </header>
+    <div id="app"></div>
 
-      <div id="app"></div>
+    <footer>
+      <p id="corporate">¿Trabajas en responsabilidad social, sustentabilidad o
+      recursos humanos de una empresa?, Aventones Corporativo es un proyecto
+      que quieres tener en tu empresa, te lo aseguramos!! <%= link_to "Aventones corporativo", "http://aventones.com/" %></p>
+    </footer>
 
-      <footer>
-        <p id="corporate">¿Trabajas en responsabilidad social, sustentabilidad o
-        recursos humanos de una empresa?, Aventones Corporativo es un proyecto
-        que quieres tener en tu empresa, te lo aseguramos!!</p>
-
-        <p id="corporate_link">
-        <a href="#">Aventones corporativo</a>
-        </p>
-      </footer>
-
-      <div id="aventones_tooltip" class="reveal-modal">
+    <div id="aventones_tooltip" class="modal hide fade">
+      <div class="modal-header">
+        <a href="" class="close" data-dismiss="modal">&times;</a>
+        <h3>¿Qué es Aventones?</h3>
+      </div>
+      <div class="modal-body">
         <p><strong>Aventones</strong> es un portal en Internet que te ayudará a
         encontrar ya sea amigos o amigos de tus amigos con quién compartir
         coche.</p>
@@ -42,12 +43,12 @@
         compartir el coche.</p>
 
         <p>Es una solución social y sustentable de movilidad.</p>
-
-        <a class="close-reveal-modal">&#215;</a>
       </div>
+
     </div>
-  </div>
-</div>
+  </div><!-- End of .aventones-box -->
+  <div class="aventones-footer">© 2012 Aventones. All Rights Reserved.</div>
+</div><!-- End of .container -->
 
 
   <script type="text/javascript" charset="utf-8">

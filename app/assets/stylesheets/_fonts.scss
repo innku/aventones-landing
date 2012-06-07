@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
+
+@mixin serif-font {
+  font-family: Georgia, Times New Roman, "Times", serif;
+  @include font-confs;
+}
+
+@mixin sans-serif-font {
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+//  @include font-confs;
+}
+
+@mixin sans-serif-light-font {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  @include font-confs;
+}
+
+@mixin pt-sans-caption {
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+@mixin font-confs($weight: normal, $size: 13px, $lineHeight: 18px) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}

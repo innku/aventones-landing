@@ -1,10 +1,16 @@
 <section id="new-survey">
 
-  <h3>¿Quieres participar?</h3>
+  <h2 class="divider"><span>¿Quieres participar?</span></h2>
 
-  <form class="nice">
-    <input class="input-text" type="text" name="email" value="" placeholder="déjanos tu email" required autofocus>
-    <button class="nice radius large button green">Le entro</button>
-  </form>
+  <div class="register-bar">
+    <ul class="item-stream search-input-stream">
+      <li class="stream-item stream-header search-input-item">
+        <form >
+          <input class="input-text" type="text" name="email" value="" placeholder="déjanos tu email" required autofocus>
+          <button class="btn-inverse" type="submit">Le entro</button>
+        </form>
+      </li>
+    </ul>
+  </div>
 
 </section>
