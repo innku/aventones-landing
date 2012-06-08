@@ -94,6 +94,10 @@
       font-weight: 400;
       text-align: center;
       line-height: 30px;
+      
+      a {
+        font-size: 16px;
+      }
     }
     
   }
@@ -118,6 +122,13 @@
     p {
       color: $white;
       margin: 0;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      
+      a {
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 1);
+        font-weight: bold;
+        font-size: 14px;
+      }
     }
     
   }
