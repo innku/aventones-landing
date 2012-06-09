@@ -12,12 +12,12 @@ $(images).each ->
 
 index = 0
 $.backstretch images[index],
-  speed: 1400
+  speed: 1800
 
 setInterval (->
   index = (if (index >= images.length - 1) then 0 else index + 1)
   $.backstretch images[index]
-), 5000
+), 8000
 
 jQuery(document).ready ->
   $("input[type=email]").livequery ->
