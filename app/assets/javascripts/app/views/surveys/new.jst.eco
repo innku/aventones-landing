@@ -9,10 +9,10 @@
   <h2 class="divider"><span>¿Quieres participar?</span></h2>
 
   <div class="register-bar">
-    <ul class="item-stream search-input-stream">
+    <ul class="item-stream search-input-stream" id="email_form">
       <li class="stream-item stream-header search-input-item">
-        <form >
-          <input class="input-text" type="email" name="email" value="" placeholder="déjanos tu email" required autofocus>
+        <form>
+          <input id="email_input" class="input-text" type="email" name="email" value="" placeholder="déjanos tu email" required autofocus>
           <button class="btn-inverse" type="submit">le entro</button>
         </form>
       </li>
