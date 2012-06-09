@@ -1,3 +1,9 @@
+<header>
+  <h1>¡Ahora será para todos!</h1>
+  <h2>Encuentra con quién compartir el auto y ayúdanos a tener menos
+  tráfico, menos emisiones y mejores ciudades. <a href="#aventones_tooltip" data-toggle="modal">¿Qué es Aventones?</a></h2>
+</header>
+
 <section id="new-survey">
 
   <h2 class="divider"><span>¿Quieres participar?</span></h2>
@@ -6,11 +12,12 @@
     <ul class="item-stream search-input-stream">
       <li class="stream-item stream-header search-input-item">
         <form >
-          <input class="input-text" type="text" name="email" value="" placeholder="déjanos tu email" required autofocus>
-          <button class="btn-inverse" type="submit">Le entro</button>
+          <input class="input-text" type="email" name="email" value="" placeholder="déjanos tu email" required autofocus>
+          <button class="btn-inverse" type="submit">le entro</button>
         </form>
       </li>
     </ul>
+    <p class="notice">Prometemos cero spam, únicamente te avisaremos cuando esté listo.</p>
   </div>
 
 </section>

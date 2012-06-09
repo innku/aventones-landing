@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Aventones</title>
+  <title>Aventones - Sé de los primeros en unirte</title>
+  <meta name="description" content="Con Aventones podrás encontrar gente con quién compartir el auto para ahorrar gasolina, tiempo y dinero, además de contribuir al medio ambiente. Sé de los primeros en unirte." />
+  <meta name="keywords" content="Aventones, Aventón, car pooling, car pool, green transport" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -12,19 +14,14 @@
 <div class="container">
   
   <div class="aventones-box">
-    <div class="aventones-logo"><div class="logo-bx"><%= image_tag("logo-aventones.png") %></div></div>
-    <header>
-      <h1>Aventones se abrirá al público</h1>
-      <h2>Encuentra con quién compartir el auto y ayúdanos a tener menos
-      tráfico, menos emisiones y mejores ciudades. <a href="#aventones_tooltip" data-toggle="modal">¿Qué es Aventones?</a></h2>
-    </header>
+    <div class="aventones-logo"><div class="logo-bx"><%= link_to(image_tag("logo-aventones.png"), root_url) %></div></div>
 
     <div id="app"></div>
 
     <footer>
       <p id="corporate">¿Trabajas en responsabilidad social, sustentabilidad o
       recursos humanos de una empresa?, Aventones Corporativo es un proyecto
-      que quieres tener en tu empresa, te lo aseguramos!! <%= link_to "Aventones corporativo", "http://aventones.com/" %></p>
+      que quieres tener en tu empresa, ¡te lo aseguramos! <%= link_to "Conoce más sobre Aventones corporativo >>", "http://aventones.com/" %></p>
     </footer>
 
     <div id="aventones_tooltip" class="modal hide fade">

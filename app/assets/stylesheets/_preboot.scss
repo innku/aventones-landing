@@ -1,16 +1,23 @@
 // Colors
 
 $white:       #ffffff;
+$black:       #000000;
 $lightGrey:   #999999;
 $darkGrey:    #666666;
 $bgGrey:      #eceff4;
 $outlineGrey: #e0e4ea;
+$lightGreen:  #B8E889;
 $linkGreen:   #6C9D3B;
 $borderGreen: #669933;
+$medGreen:    #91BD75;
 $darkGreen:   #336633;
 $lightRed:    #FF5E81;
 $darkRed:     #FF5563;
 $wineRed:     #830000;
+
+//Shaddows
+
+$buttonShaddow: rgba(0, 0, 0, 0.3) 1px 1px 8px;
 
 @mixin green-button {
   background-color: #ACD889;

@@ -43,14 +43,14 @@ label {
 }
 
 textarea,
-input[type="text"] {
+input[type="email"] {
   display: inline-block;
   height: 18px;
   padding: 4px;
   margin-bottom: 9px;
   font-size: 13px;
   line-height: 18px;
-  color: #555555;
+  color: $lightGrey;
 }
 
 input,
@@ -63,7 +63,7 @@ textarea {
 }
 
 textarea,
-input[type="text"] {
+input[type="email"] {
   background-color: #ffffff;
   border: 1px solid #cccccc;
   -webkit-border-radius: 3px;
@@ -80,7 +80,7 @@ input[type="text"] {
 }
 
 textarea:focus,
-input[type="text"]:focus {
+input[type="email"]:focus {
   border-color: rgba(102, 153, 51, 0.8);
   outline: 0;
   outline: thin dotted \9;
@@ -101,7 +101,7 @@ input[type="checkbox"] {
 
 .register-bar {
 	width: 90%;
-	margin: 0 auto 38px;
+	margin: 0 auto 10px;
 	position: relative;
 	
 	ul {
@@ -123,7 +123,7 @@ input[type="checkbox"] {
     	margin: 0;
     }
 
-    input[type=text] {
+    input[type=email] {
     	float: left;
     	height: 30px;
     	font-size: 20px;
@@ -147,8 +147,12 @@ input[type="checkbox"] {
     	border-radius: 0 6px 6px 0;
     	color: $darkGreen;
     	text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
-    	font-size: 16px;
+    	font: {
+    	  size: 18px;
+    	  weight: bold;
+    	}
       line-height: 20px;
+      padding: 2px 4px 3px;
     }
     
   }

@@ -1,7 +1,6 @@
 <section id="would-pay">
-<div class="divider-hr"></div>
-<p>¿Te gustaría en vez de estar pagando taxis, pagarle a algún conocido por
-que te diera un aventón?</p>
+<h2 class="frase">¿Te gustaría en vez de estar pagando taxis, pagarle a algún conocido por
+que te diera un aventón?</h2>
 
 <p class="buttons">
   <a class="yes-button" data-type="yes">

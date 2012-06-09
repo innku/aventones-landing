@@ -73,16 +73,16 @@
   @include border-radius(10px);
   @include box-shadow(rgba(0, 0, 0, 0.4) 0 0 25px, rgba(0, 0, 0, 0.12)0 0 20px 4px inset);
   
-  header, #app, footer {
+  #app, footer {
     padding: 25px 20px 25px;
   }
   
   header {
-    padding: 25px 20px 0;
+    padding: 25px 0 0;
     
     h1 {
       color: $darkGrey;
-      margin: 20px 22px 0;
+      margin: 20px 0 0;
       font-weight: 700;
       text-align: center;
       line-height: 40px;
@@ -90,13 +90,14 @@
     
     h2 {
       color: $lightGrey;
-      margin: 0 22px 35px;
+      margin: 0 0 35px;
       font-weight: 400;
       text-align: center;
       line-height: 30px;
       
       a {
         font-size: 16px;
+        display: block;
       }
     }
     
@@ -108,7 +109,31 @@
     p {
       font-size: 18px;
       text-align: center;
-      margin: 30px 0 30px 0;
+      margin: auto;
+      padding: 30px 0 30px 0;
+    }
+    
+    .notice {
+      font-size: 14px;
+      text-align: center;
+      margin: 5px 0 0 0;
+      padding: 0;
+    }
+    
+    section {
+      
+      h2.frase {
+        color: $lightGrey;
+        margin: 20px 0 0;
+        font-weight: 400;
+        text-align: center;
+        line-height: 30px;
+
+        a {
+          font-size: 16px;
+        }
+      }
+      
     }
     
   }
@@ -137,6 +162,7 @@
     background: transparent url(divider.png) repeat-x 0 center;
     font-size: 22px;
     text-align: center;
+    margin: 0 0 30px;
     
     span {
       background: rgba(236, 239, 244, 1);
