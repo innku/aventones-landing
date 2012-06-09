@@ -1,4 +1,5 @@
 @import "default";
+@import "compass";
 @import "compass/css3";
 
 .stack > *:not(.active) {
@@ -37,7 +38,7 @@
 
 .aventones-logo {
   height: 130px;
-  background: url(bg.png) repeat;
+  background: inline-image("bg.png") repeat;
   @include border-top-left-radius(10px);
   @include border-top-right-radius(10px);
   border-bottom: 2px double $borderGreen;
@@ -59,7 +60,20 @@
     background: -ms-radial-gradient(center, ellipse cover,  rgba(201,222,150,0.6) 0%,rgba(138,182,107,0.33) 59%,rgba(102,153,51,0.14) 100%); /* IE10+ */
     background: radial-gradient(center, ellipse cover,  rgba(201,222,150,0.6) 0%,rgba(138,182,107,0.33) 59%,rgba(102,153,51,0.14) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c9de96', endColorstr='#24669933',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-              
+    
+    // Please do not use (text-indent: -99999px;), use method below
+    // Performance is dramatically improved because a 9999px box is not drawn. Noticeably so in animations on the iPad 1.
+    a.logo {
+      width: 360px;
+      height: 96px;
+      display: block;
+      background: inline-image("logo-aventones.png") no-repeat 0 0;
+      margin: 8px auto 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    
   }
   
   img {
@@ -140,7 +154,7 @@
   
   footer {
     padding: 10px 20px 10px;
-    background: url(bg_small.png) repeat;
+    background: inline-image("bg_small.png") repeat;
     @include border-bottom-left-radius(10px);
     @include border-bottom-right-radius(10px);
     
@@ -159,7 +173,7 @@
   }
   
   h2.divider {
-    background: transparent url(divider.png) repeat-x 0 center;
+    background: transparent inline-image("divider.png") repeat-x 0 center;
     font-size: 22px;
     text-align: center;
     margin: 0 0 30px;
@@ -175,7 +189,7 @@
 
 .divider-hr {
   display: block;
-  background: transparent url(divider.png) repeat-x 0 center;
+  background: transparent inline-image("divider.png") repeat-x 0 center;
   height: 2px;
   margin: 10px 0 10px 0;
 }
@@ -185,7 +199,6 @@
   margin: 0 0 20px 0;
   overflow: hidden;
   padding: 10px 5px 0 5px;
-//  background: transparent url(box-shadow.png) no-repeat -20px 0;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
