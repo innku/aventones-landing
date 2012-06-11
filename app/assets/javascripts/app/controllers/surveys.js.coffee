@@ -79,7 +79,7 @@ class WouldPay extends Spine.Controller
   no: ->
     @item.would_pay = 'no'
     @item.save()
-    @html @view('surveys/thankyou2')
+    @html @view('surveys/noproblem')
 
 
 
