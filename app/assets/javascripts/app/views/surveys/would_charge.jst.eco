@@ -3,8 +3,8 @@
 validemos algunos datos como que tengas licencia o seguro?</h2>
 
 <p class="buttons center">
-  <a class="yes-button" data-type="yes"><span>Sí</span> me gustaría</a>
-  <a class="no-button"  data-type="no"><span>No</span> me gustaría</a>
+  <a class="button-grey" data-type="yes"><span>Sí</span> me gustaría</a>
+  <a class="button-grey"  data-type="no"><span>No</span> me gustaría</a>
 </p>
 
 </section>

@@ -3,17 +3,17 @@
 que te diera un aventón?</h2>
 
 <p class="buttons">
-  <a class="yes-button" data-type="yes">
+  <a class="button-grey" data-type="yes">
     <span>Sí</span>
     si es un amigo si pagaría
   </a>
 
-  <a class="yes-button" data-type="maybe">
+  <a class="button-grey" data-type="maybe">
     <span style="margin-top:8px;">Le pagaría a quien sea</span>
     siempre y cuando pueda saber quién es
   </a>
 
-  <a class="no-button nice radius large button red"  data-type="no">
+  <a class="button-grey"  data-type="no">
     <span>No</span>
     no pagaría por un aventón
   </a>
