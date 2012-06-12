@@ -1,7 +1,6 @@
 <header>
-  <h1>¡Ahora será para todos!</h1>
-  <h2>Encuentra con quién compartir el auto y ayúdanos a tener menos
-  tráfico, menos emisiones y mejores ciudades. <a href="#aventones_tooltip" data-toggle="modal">¿Qué es Aventones?</a></h2>
+  <h1>¡Comparte el auto con tus círculos sociales!</h1>
+  <h2>Sé parte de la solución. Menos tráfico, menos emisiones, mejores ciudades. <a href="#aventones_tooltip" data-toggle="modal">¿Qué es Aventones?</a></h2>
 </header>
 
 <section id="new-survey">
