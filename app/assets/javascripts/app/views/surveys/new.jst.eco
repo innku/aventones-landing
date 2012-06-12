@@ -12,7 +12,7 @@
       <li class="stream-item stream-header search-input-item">
         <form>
           <input id="email_input" class="input-text" type="email" name="email" value="" placeholder="déjanos tu email" required autofocus>
-          <button class="btn-inverse" type="submit">le entro</button>
+          <button class="btn-inverse" type="submit">me apunto</button>
         </form>
       </li>
     </ul>
