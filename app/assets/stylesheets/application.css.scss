@@ -83,7 +83,7 @@
 
 .aventones-box {
   background: rgba(236, 239, 244, 1);
-  margin: 80px 0 0 0;
+  margin: 60px 0 0 0;
   @include border-radius(10px);
   @include box-shadow(rgba(0, 0, 0, 0.4) 0 0 25px, rgba(0, 0, 0, 0.12)0 0 20px 4px inset);
   
@@ -386,4 +386,8 @@ textarea.LV_invalid_field:active,
 .fieldWithErrors input.LV_invalid_field,
 .fieldWithErrors textarea.LV_invalid_field {
     border: 1px solid $orange;
+}
+
+.chromeframe {
+  font-weight: bold;
 }
