@@ -6,7 +6,7 @@ class StatsController < ApplicationController
   before_filter :authenticate
 
   def index
-    @surveys = Survey.all
+    @surveys = Survey.order('id DESC')
   end
 
 

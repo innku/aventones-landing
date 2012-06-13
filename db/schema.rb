@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120531212632) do
+ActiveRecord::Schema.define(:version => 20120613043836) do
 
   create_table "surveys", :force => true do |t|
     t.string   "email"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20120531212632) do
     t.string   "would_pay"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "ipaddress"
+    t.string   "useragent"
   end
 
   add_index "surveys", ["would_charge"], :name => "index_surveys_on_would_charge"
