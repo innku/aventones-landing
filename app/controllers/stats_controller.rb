@@ -1,7 +1,7 @@
 class StatsController < ApplicationController
   layout 'stats'
 
-  USERS = { "lifo" => "world" }
+  USERS = { "veamos" => "lasestadisticas" }
 
   before_filter :authenticate
 
