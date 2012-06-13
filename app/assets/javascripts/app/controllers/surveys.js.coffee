@@ -14,16 +14,22 @@ class New extends Spine.Controller
 
   submit: (e) ->
     e.preventDefault()
-    email = $(e.target).find('input').val()
-    survey = Survey.fromJSON({
-      email: email,
-      would_charge: null,
-      would_pay: null
-    }).save()
 
     scenarios = ['would_charge', 'would_pay']
     choice = scenarios[Math.floor(Math.random() * scenarios.length)]
-    @navigate '/surveys', survey.id, choice if survey
+
+    email = $(e.target).find('input').val()
+    emailPattern = /// ^([\w.-]+)@([\w.-]+)\.([a-zA-Z.]{2,6})$ ///i
+
+    if email.match emailPattern
+      survey = Survey.fromJSON({
+        email: email,
+        would_charge: null,
+        would_pay: null
+      }).save()
+      @navigate '/surveys', survey.id, choice if survey
+    else
+      console.log('Invalid email')
 
 
 class WouldCharge extends Spine.Controller
