@@ -1,0 +1,28 @@
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Would charge</th>
+      <th>Would pay</th>
+      <th>Timestamp</th>
+      <th>IP address</th>
+      <th>User Agent</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @surveys.each do |survey| %>
+    <tr>
+      <td><%= survey.email %></td>
+      <td><%= survey.would_charge %></td>
+      <td><%= survey.would_pay %></td>
+      <td><%= survey.created_at %></td>
+      <td><%= survey.ipaddress %></td>
+      <td><%= survey.useragent %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+

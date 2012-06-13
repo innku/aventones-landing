@@ -42,6 +42,8 @@ class SurveysController < ApplicationController
   # POST /surveys.json
   def create
     @survey = Survey.new(params[:survey])
+    @survey.useragent = request.user_agent.to_s
+    @survey.ipaddress = request.remote_ip.to_s
 
     respond_to do |format|
       if @survey.save
