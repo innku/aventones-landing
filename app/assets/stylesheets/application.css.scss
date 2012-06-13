@@ -391,3 +391,26 @@ textarea.LV_invalid_field:active,
 .chromeframe {
   font-weight: bold;
 }
+
+@media (max-width: 480px) {
+  
+  .aventones-logo {
+    
+    .logo-bx {
+      
+      a.logo {
+        width: 220px;
+        height: 57px;
+        display: block;
+        background: inline-image("logo-aventones-mobil.png") no-repeat 0 0;
+        margin: 24px auto 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      
+    }
+
+  }
+   
+}
