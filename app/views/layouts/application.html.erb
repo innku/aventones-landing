@@ -19,6 +19,18 @@
   <![endif]-->
   <%= csrf_meta_tags %>
   <link rel="shortcut icon" href="iconochiquito.png" />
+  <script type="text/javascript" charset="utf-8">
+    var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32588047-1']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackEvent', 'Pre-registro', 'Submit', 'Me apunto'])
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
 </head>
 <body>
 
@@ -93,16 +105,6 @@
     jQuery(function() {
       new App({ el: $("#app") });
     });
-    
-    var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-32588047-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
   </script>
   
 </body>
