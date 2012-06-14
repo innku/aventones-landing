@@ -7,7 +7,7 @@ class SurveysController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @surveys }
+      format.json { render json: @surveys, only: [:id] }
     end
   end
 
@@ -18,7 +18,7 @@ class SurveysController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @survey }
+      format.json { render json: @survey, only: [:id] }
     end
   end
 
