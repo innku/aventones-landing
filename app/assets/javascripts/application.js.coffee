@@ -24,5 +24,6 @@ jQuery(document).ready ->
   $("input[type=email]").livequery ->
     email_input = new LiveValidation("email_input",
       validMessage: "¡Validado!"
+      onlyOnSubmit: true
     )
     email_input.add Validate.Email
