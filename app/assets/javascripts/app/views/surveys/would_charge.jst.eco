@@ -8,3 +8,6 @@ validemos algunos datos como que tengas licencia o seguro?</h2>
 </p>
 
 </section>
+<script type="text/javascript">
+  _gaq.push(['_trackEvent', 'Pre-registro', 'Submit', 'Me apunto']);
+</script>
